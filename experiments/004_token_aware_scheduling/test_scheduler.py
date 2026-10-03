@@ -51,7 +51,7 @@ def main():
         if batch is None:
             print("\nNo more work.")
             break
-        
+
     print("\nFinal scheduler state:")
 
     print(
