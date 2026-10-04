@@ -1,0 +1,14 @@
+{
+  "git_revision": "b5e9a6ca401e18e7fc667648abc958f347ee9521",
+  "machine": "AMD64",
+  "package_versions": {
+    "PyYAML": "6.0.3",
+    "llm-engineering-lab": "0.1.0",
+    "pydantic": "2.12.5",
+    "torch": "2.10.0",
+    "transformers": "5.0.0"
+  },
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python_executable": "C:\\Users\\Vyshnavi\\.pyenv\\pyenv-win\\versions\\3.11.9\\python.exe",
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]"
+}

@@ -6,7 +6,6 @@ import torch
 
 from llm_engineering_lab.inference.pretrained import PretrainedGenerator
 
-
 MODEL_ID = "gpt2"
 PROMPT = (
     "When designing a production language model inference system, "

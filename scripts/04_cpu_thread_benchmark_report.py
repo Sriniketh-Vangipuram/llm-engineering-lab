@@ -11,7 +11,6 @@ import torch
 import transformers
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-
 MODEL_ID = "gpt2"
 PROMPT = "A production language model"
 OUTPUT_TOKENS = 40

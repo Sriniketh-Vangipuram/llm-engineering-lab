@@ -4,7 +4,6 @@ import time
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-
 MODEL_ID = "gpt2"
 PROMPT = "A production language model"
 MAX_NEW_TOKENS = 40

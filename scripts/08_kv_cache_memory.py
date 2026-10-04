@@ -3,7 +3,6 @@ import torch
 
 from llm_engineering_lab.inference.pretrained import PretrainedGenerator
 
-
 MODEL_ID = "gpt2"
 SEQUENCE_LENGTHS = [16, 64, 256, 512]
 BATCH_SIZES = [1, 2]

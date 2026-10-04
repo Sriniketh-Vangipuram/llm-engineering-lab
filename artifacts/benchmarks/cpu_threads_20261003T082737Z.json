@@ -1,0 +1,82 @@
+{
+  "experiment": "cpu-thread-generation-benchmark",
+  "timestamp_utc": "2026-10-03T08:27:36.999238+00:00",
+  "model_id": "gpt2",
+  "prompt": "A production language model",
+  "prompt_tokens": 4,
+  "parameter_count": 124439808,
+  "device": "cpu",
+  "model_load_seconds": 4.171,
+  "environment": {
+    "python_version": "3.11.9",
+    "pytorch_version": "2.10.0+cpu",
+    "transformers_version": "5.0.0",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "logical_cpu_count": 8
+  },
+  "results": [
+    {
+      "threads": 1,
+      "output_tokens": 40,
+      "warmup_runs": 1,
+      "measured_runs": 7,
+      "latency_seconds": [
+        1.876111,
+        1.911492,
+        2.035337,
+        2.12327,
+        1.879797,
+        1.810946,
+        2.122343
+      ],
+      "median_latency_seconds": 1.911492,
+      "mean_latency_seconds": 1.965614,
+      "min_latency_seconds": 1.810946,
+      "max_latency_seconds": 2.12327,
+      "latency_stdev_seconds": 0.126825,
+      "median_throughput_tokens_per_second": 20.926
+    },
+    {
+      "threads": 2,
+      "output_tokens": 40,
+      "warmup_runs": 1,
+      "measured_runs": 7,
+      "latency_seconds": [
+        2.562039,
+        2.15885,
+        2.016054,
+        2.104654,
+        1.839711,
+        1.805466,
+        2.101902
+      ],
+      "median_latency_seconds": 2.101902,
+      "mean_latency_seconds": 2.084097,
+      "min_latency_seconds": 1.805466,
+      "max_latency_seconds": 2.562039,
+      "latency_stdev_seconds": 0.250581,
+      "median_throughput_tokens_per_second": 19.03
+    },
+    {
+      "threads": 4,
+      "output_tokens": 40,
+      "warmup_runs": 1,
+      "measured_runs": 7,
+      "latency_seconds": [
+        2.255725,
+        2.139433,
+        2.371239,
+        2.3994,
+        2.295452,
+        2.36375,
+        2.329165
+      ],
+      "median_latency_seconds": 2.329165,
+      "mean_latency_seconds": 2.307738,
+      "min_latency_seconds": 2.139433,
+      "max_latency_seconds": 2.3994,
+      "latency_stdev_seconds": 0.088707,
+      "median_throughput_tokens_per_second": 17.174
+    }
+  ]
+}

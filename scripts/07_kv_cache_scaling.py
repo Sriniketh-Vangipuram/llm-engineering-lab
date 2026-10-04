@@ -5,7 +5,6 @@ import torch
 
 from llm_engineering_lab.inference.pretrained import PretrainedGenerator
 
-
 MODEL_ID = "gpt2"
 PROMPT_LENGTHS = [16, 64]
 OUTPUT_LENGTHS = [16, 40]
