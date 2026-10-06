@@ -19,6 +19,23 @@ class FakeTokenizer:
             return [101, *range(len(tokens)), 102]
         return list(range(len(tokens)))
 
+    def __call__(
+        self,
+        text,
+        add_special_tokens=False,
+        truncation=False,
+        max_length=None,
+    ):
+        token_ids = self.encode(
+            text,
+            add_special_tokens=add_special_tokens,
+            truncation=False,
+        )
+
+        if truncation and max_length is not None:
+            token_ids = token_ids[:max_length]
+
+        return {"input_ids": token_ids}
 
 @pytest.fixture
 def tokenizer():
@@ -104,7 +121,25 @@ def test_invalid_language(tokenizer, language):
     with pytest.raises(ValueError, match="language must be a non-empty string"):
         benchmark_text(tokenizer, "hello", language)
 
-
 def test_invalid_special_token_option(tokenizer):
     with pytest.raises(TypeError, match="add_special_tokens must be a boolean"):
         benchmark_text(tokenizer, "hello", "English", add_special_tokens=1)
+def test_context_boundary_truncation(tokenizer):
+    text = " ".join(["word"] * 12)
+    token_ids = tokenizer.encode(
+        text,
+        add_special_tokens=False,
+        truncation=False,
+    )
+
+    assert len(token_ids) == 12
+    assert len(token_ids) > tokenizer.model_max_length
+
+    truncated = tokenizer(
+        text,
+        add_special_tokens=False,
+        truncation=True,
+        max_length=tokenizer.model_max_length,
+    )
+
+    assert len(truncated["input_ids"]) == tokenizer.model_max_length
