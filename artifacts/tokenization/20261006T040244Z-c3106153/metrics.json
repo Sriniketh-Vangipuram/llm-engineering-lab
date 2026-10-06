@@ -1,0 +1,256 @@
+{
+  "corpus": {
+    "languages": [
+      "English",
+      "Hindi",
+      "Telugu",
+      "Tamil",
+      "Malayalam",
+      "Odia"
+    ],
+    "samples_per_language": 20,
+    "total_samples": 120
+  },
+  "experiment": {
+    "description": "Controlled multilingual tokenization benchmark across six languages",
+    "id": "multilingual-tokenization"
+  },
+  "interpretation": {
+    "english_reference_tokens": 191,
+    "english_relative_ratio_definition": "language_total_tokens / english_total_tokens"
+  },
+  "language_summary": [
+    {
+      "language": "English",
+      "samples": 20,
+      "sequence_length_tokens": {
+        "max": 12.0,
+        "mean": 9.55,
+        "median": 9.0,
+        "min": 7.0,
+        "p95": 12.0
+      },
+      "tokens_per_character": {
+        "max": 0.19298245614035087,
+        "mean": 0.1688379610614036,
+        "median": 0.17274535809018568,
+        "min": 0.12962962962962962,
+        "p95": 0.1906015037593985
+      },
+      "tokens_per_utf8_byte": {
+        "max": 0.19298245614035087,
+        "mean": 0.1688379610614036,
+        "median": 0.17274535809018568,
+        "min": 0.12962962962962962,
+        "p95": 0.1906015037593985
+      },
+      "tokens_per_word": {
+        "max": 1.5,
+        "mean": 1.2342478354978355,
+        "median": 1.2083333333333335,
+        "min": 1.0909090909090908,
+        "p95": 1.5
+      },
+      "total_characters": 1130,
+      "total_tokens": 191,
+      "total_utf8_bytes": 1130,
+      "total_whitespace_words": 156
+    },
+    {
+      "language": "Hindi",
+      "samples": 20,
+      "sequence_length_tokens": {
+        "max": 63.0,
+        "mean": 54.15,
+        "median": 54.5,
+        "min": 41.0,
+        "p95": 62.05
+      },
+      "tokens_per_character": {
+        "max": 0.9666666666666667,
+        "mean": 0.9180742340814865,
+        "median": 0.9151567443198159,
+        "min": 0.8833333333333333,
+        "p95": 0.9500282485875706
+      },
+      "tokens_per_utf8_byte": {
+        "max": 0.3625,
+        "mean": 0.3444465685218372,
+        "median": 0.34445433802660136,
+        "min": 0.3192771084337349,
+        "p95": 0.35697850318471336
+      },
+      "tokens_per_word": {
+        "max": 6.625,
+        "mean": 5.181244311244312,
+        "median": 5.045454545454545,
+        "min": 4.285714285714286,
+        "p95": 6.50625
+      },
+      "total_characters": 1180,
+      "total_tokens": 1083,
+      "total_utf8_bytes": 3144,
+      "total_whitespace_words": 213
+    },
+    {
+      "language": "Telugu",
+      "samples": 20,
+      "sequence_length_tokens": {
+        "max": 118.0,
+        "mean": 89.8,
+        "median": 90.5,
+        "min": 67.0,
+        "p95": 112.30000000000001
+      },
+      "tokens_per_character": {
+        "max": 1.5625,
+        "mean": 1.509542313512147,
+        "median": 1.5196969696969695,
+        "min": 1.411764705882353,
+        "p95": 1.5579326923076924
+      },
+      "tokens_per_utf8_byte": {
+        "max": 0.5681818181818182,
+        "mean": 0.5446731637228615,
+        "median": 0.5498710628108308,
+        "min": 0.5146198830409356,
+        "p95": 0.5606380065717415
+      },
+      "tokens_per_word": {
+        "max": 16.2,
+        "mean": 13.463968253968254,
+        "median": 13.342857142857143,
+        "min": 10.285714285714286,
+        "p95": 16.168333333333333
+      },
+      "total_characters": 1189,
+      "total_tokens": 1796,
+      "total_utf8_bytes": 3295,
+      "total_whitespace_words": 135
+    },
+    {
+      "language": "Tamil",
+      "samples": 20,
+      "sequence_length_tokens": {
+        "max": 85.0,
+        "mean": 71.55,
+        "median": 73.5,
+        "min": 59.0,
+        "p95": 83.1
+      },
+      "tokens_per_character": {
+        "max": 1.2244897959183674,
+        "mean": 1.1250855956992476,
+        "median": 1.1207489878542511,
+        "min": 1.0615384615384615,
+        "p95": 1.1770975056689343
+      },
+      "tokens_per_utf8_byte": {
+        "max": 0.43795620437956206,
+        "mean": 0.402470607449628,
+        "median": 0.40113932384851003,
+        "min": 0.3770491803278688,
+        "p95": 0.4226790602189781
+      },
+      "tokens_per_word": {
+        "max": 14.8,
+        "mean": 11.219761904761905,
+        "median": 10.857142857142858,
+        "min": 9.5,
+        "p95": 12.71
+      },
+      "total_characters": 1275,
+      "total_tokens": 1431,
+      "total_utf8_bytes": 3565,
+      "total_whitespace_words": 129
+    },
+    {
+      "language": "Malayalam",
+      "samples": 20,
+      "sequence_length_tokens": {
+        "max": 128.0,
+        "mean": 87.35,
+        "median": 85.0,
+        "min": 60.0,
+        "p95": 112.80000000000001
+      },
+      "tokens_per_character": {
+        "max": 1.4,
+        "mean": 1.3234772646536153,
+        "median": 1.3155315193510224,
+        "min": 1.2153846153846153,
+        "p95": 1.4
+      },
+      "tokens_per_utf8_byte": {
+        "max": 0.5027624309392266,
+        "mean": 0.4723515336051701,
+        "median": 0.4735284957957022,
+        "min": 0.43169398907103823,
+        "p95": 0.49754249313166077
+      },
+      "tokens_per_word": {
+        "max": 17.0,
+        "mean": 13.734166666666667,
+        "median": 13.55,
+        "min": 11.142857142857142,
+        "p95": 16.05
+      },
+      "total_characters": 1319,
+      "total_tokens": 1747,
+      "total_utf8_bytes": 3697,
+      "total_whitespace_words": 128
+    },
+    {
+      "language": "Odia",
+      "samples": 20,
+      "sequence_length_tokens": {
+        "max": 143.0,
+        "mean": 110.35,
+        "median": 111.5,
+        "min": 73.0,
+        "p95": 133.5
+      },
+      "tokens_per_character": {
+        "max": 2.108695652173913,
+        "mean": 2.035568760317848,
+        "median": 2.036774628879892,
+        "min": 1.9210526315789473,
+        "p95": 2.0959109730848864
+      },
+      "tokens_per_utf8_byte": {
+        "max": 0.7698412698412699,
+        "mean": 0.7383289962174159,
+        "median": 0.7395074139230962,
+        "min": 0.7156862745098039,
+        "p95": 0.7558390022675736
+      },
+      "tokens_per_word": {
+        "max": 17.6,
+        "mean": 14.757678571428572,
+        "median": 15.196428571428571,
+        "min": 10.428571428571429,
+        "p95": 17.03
+      },
+      "total_characters": 1084,
+      "total_tokens": 2207,
+      "total_utf8_bytes": 2988,
+      "total_whitespace_words": 151
+    }
+  ],
+  "tokenizer": {
+    "bos_token": null,
+    "eos_token": "<|im_end|>",
+    "is_fast": true,
+    "model_max_length": 131072,
+    "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
+    "pad_token": "<|endoftext|>",
+    "revision": null,
+    "special_tokens_map": {
+      "eos_token": "<|im_end|>",
+      "pad_token": "<|endoftext|>"
+    },
+    "tokenizer_class": "Qwen2Tokenizer",
+    "unk_token": null,
+    "vocabulary_size": 151665
+  }
+}

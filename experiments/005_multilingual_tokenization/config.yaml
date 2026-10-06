@@ -1,0 +1,8 @@
+experiment_id: multilingual-tokenization
+description: Controlled multilingual tokenization benchmark across six languages
+seed: 42
+output_dir: artifacts\tokenization
+parameters:
+  tokenizer_name: Qwen/Qwen2.5-1.5B-Instruct
+  revision: null
+  samples_per_language: 20
